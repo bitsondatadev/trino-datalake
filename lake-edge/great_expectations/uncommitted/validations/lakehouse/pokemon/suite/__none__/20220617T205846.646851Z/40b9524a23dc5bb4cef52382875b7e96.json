@@ -1,0 +1,151 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "lakehouse.pokemon",
+      "data_connector_name": "default_inferred_data_connector_name",
+      "datasource_name": "trino"
+    },
+    "batch_markers": {
+      "ge_load_time": "20220617T205846.670812Z"
+    },
+    "batch_spec": {
+      "batch_identifiers": {},
+      "data_asset_name": "lakehouse.pokemon",
+      "schema_name": "lakehouse",
+      "table_name": "pokemon",
+      "type": "table"
+    },
+    "expectation_suite_name": "lakehouse.pokemon.suite",
+    "great_expectations_version": "0.15.9",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2022-06-17T20:58:46.646851+00:00"
+    },
+    "validation_time": "20220617T205846.737016Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_equal",
+        "kwargs": {
+          "batch_id": "40b9524a23dc5bb4cef52382875b7e96",
+          "value": 1032
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1032
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "40b9524a23dc5bb4cef52382875b7e96",
+          "column": "number",
+          "max_value": 898,
+          "min_value": 1
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 1032,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "40b9524a23dc5bb4cef52382875b7e96",
+          "column": "abilities",
+          "type_": "ARRAY"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "ARRAY"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "40b9524a23dc5bb4cef52382875b7e96",
+          "column": "hp",
+          "type_": "INTEGER"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "INTEGER"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "40b9524a23dc5bb4cef52382875b7e96",
+          "column": "final_evolution",
+          "type_": "BOOLEAN"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "BOOLEAN"
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 5,
+    "success_percent": 100.0,
+    "successful_expectations": 5,
+    "unsuccessful_expectations": 0
+  },
+  "success": true
+}

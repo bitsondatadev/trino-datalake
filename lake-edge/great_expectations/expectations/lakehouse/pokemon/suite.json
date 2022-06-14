@@ -1,0 +1,62 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "lakehouse.pokemon.suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_equal",
+      "kwargs": {
+        "value": 1032
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "number",
+        "max_value": 898,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "kwargs": {
+        "column": "abilities",
+        "type_": "ARRAY"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "kwargs": {
+        "column": "hp",
+        "type_": "INTEGER"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "kwargs": {
+        "column": "final_evolution",
+        "type_": "BOOLEAN"
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "lakehouse.pokemon",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "trino",
+          "limit": 1000
+        },
+        "citation_date": "2022-06-17T07:07:34.327183Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.15.9"
+  }
+}
